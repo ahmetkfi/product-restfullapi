@@ -22,6 +22,18 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## Usage
+# If you want to add a product, simply POST the information about the product to the 'products/' endpoint.
+  localhost:3000/products/ --> post method 
+  body ---> {
+        "product_name" : "Macbook",
+        "product_model" : "M1 PRO",
+        "release_year : 2018,
+        "price": 999
+        "categoryId" : 1
+  }
+
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.

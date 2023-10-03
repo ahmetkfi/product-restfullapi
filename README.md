@@ -23,16 +23,44 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Usage
-# If you want to add a product, simply POST the information about the product to the 'products/' endpoint.
-  localhost:3000/products/ --> post method 
-  body ---> {
+### If you want to add a product, simply POST the information about the product to the 'products/' endpoint.
+  localhost:3000/products/ <br/>
+  body:<br/>
+  {
         "product_name" : "Macbook",
         "product_model" : "M1 PRO",
         "release_year : 2018,
         "price": 999
         "categoryId" : 1
   }
+  <br/>
+### If you want to access all products, you need to send a GET request to the 'products/' endpoint.
+<br/>
+  localhost:3000/products -> get method .... This action will retrieve the information of the all products.
+<br/>
+### If you want to delete a product, simply provide the ID of the product you wish to delete as a parameter to the 'products/:id' endpoint using the DELETE method.
+<br/>
+  localhost:3000/products/2  -> delete method...This action will delete the product with ID 2 from the database
+<br/>
 
+### If you want to retrieve the information of a single product, simply make a GET request to the 'products/:id' endpoint
+  <br/>
+  localhost:3000/products/1 -> get method..... This action will retrieve the information of the product with ID 1 for you
+  <br/>
+### If you want to update a product, you should send the ID of the product you want to update to the 'products/:id' endpoint using the PUT method and provide the updated data.
+  <br/>
+  localhost:3000/products/3 -> put method.... This action will help you update the product with ID 3.
+  <br/>
+   body ---> 
+   <br/> {
+     "price":36000
+   }
+   <br/>
+
+### If you want to retrieve products by category, you just need to send a GET request to the 'products/category/:categoryname' endpoint.
+<br/>
+localhost:3000/products/category/phone -> get method ..... This action will retrieve all products with the category 'phone'.
+<br/>
 
 ## Description
 
